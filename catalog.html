@@ -10,36 +10,30 @@
 <body>
     <header class="main-header">
         <div class="container">
-         <a class="image-nav" href="#">
-        <img class="barbershop-logo" src="#" alt="barbershop бородинский">
-        </a>
+            <a class="image-nav" href="#">
+                <img class="barbershop-logo" src="#" alt="barbershop бородинский">
+            </a>
             <nav class="main-navigation">
                 <ul>
-                    <li>
-                        <a href="#">информация
-              			</a>
+                    <li class="main-navigation-item">
+                        <a href="#">информация</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">новости</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">прайс-лист</a>
+                    </li>
+                    <li class="main-navigation-item selected">
+                        <a href="#">магазин</a>
                     </li>
                     <li>
-                        <a href="#">новости
-             			</a>
-                    </li>
-                    <li>
-                        <a href="#">прайс-лист
-              			</a>
-                    </li>
-                    <li>
-                        <a href="#" id="main-navigation-selected">магазин 
-              			</a>
-                    </li>
-                    <li>
-                        <a href="#">контакты
-              			</a>
+                        <a href="#">контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="user-block">
-                <a class="login" href="#">Вход
-          		</a>
+                <a class="login" href="#">Вход</a>
             </div>
         </div>
     </header>
@@ -47,15 +41,15 @@
         <h2 class="shop-title">средства ухода
 		</h2>
         <ul class="breadcrumb-navigation">
-            <li><a href="#">главная
-				</a>
+            <li class="breadcrumb-item">
+                <a href="#">главная</a>
             </li>
-            <li><a href="">магазин
-				</a>
+            <li class="breadcrumb-item">
+                <a href="">магазин</a>
             </li>
-            <li><a href="#" id="breadcrumb-navigation-selected">средства ухода
-				</a>
-            </li>
+            <li class="breadcrumb-item selected">
+                <a href="#">средства ухода</a>
+             </li>
         </ul>
         <form class="shop-filter" action="#" method="get">
             <fieldset class="filter-fabricator">
@@ -93,110 +87,79 @@
                     <input class="item-type" type="radio" name="Filter-radio" value="item-type-3"> аксессуары
                 </label>
             </fieldset>
-            <button class="btn filter-btn">Показать
-            </button>
-        </form>
+            <input type="submit" class="btn filter-btn" value="показать">
+           </form>
         <section class="shop-items">
             <article class="shop-item-1">
                 <a href="#">
                     <img class="item-image" src="#" alt=" набор для путешествий baxter of california">
-                    <p class="item-name">набор для путешествий
-                    </p>
-                    <p class="item-name">"baxter of california"
-                    </p>
+                    <p class="item-name">набор для путешествий</p>
+                    <p class="item-name">"baxter of california"</p>
                 </a>
-                <label class="shop-price">2900 руб.
-                </label>
-                    <button class="btn shop-buy-btn">купить
-                    </button>
-        
+                <span class="item-price">2900 руб.</span>
+                    <input type="button" class="btn item-buy-btn" value="купить">
             </article>
             <article class="shop-item-2">
                 <a href="#">
                     <img class="item-image" src="#" alt="увлажнающий кондиционер">
-                    <p class="item-name">увлажнающий кондиционер
-                    </p>
-                    <p class="item-fabricator">"baxter of california"
-                    </p>
+                    <p class="item-name">увлажнающий кондиционер</p>
+                    <p class="item-fabricator">"baxter of california"</p>
                 </a>
-                <label class="shop-price">750 руб.
-                </label>
-                    <button class="btn shop-buy-btn">купить
-                    </button>
+                <span class="item-price">750 руб.</span>
+                <input type="button" class="btn item-buy-btn" value="купить">
             </article>
 
             <article class="shop-item-3">
                 <a href="#">
                     <img class="item-image" src="#" alt="гель для волос">
-                    <p class="item-name">гель для волос
-                    </p>
-                    <p class="item-fabricator">"suavetico"
-                    </p>
+                    <p class="item-name">гель для волос</p>
+                    <p class="item-fabricator">"suavetico"</p>
                 </a>
-                <label class="shop-price">290 руб.
-                </label>
-                    <button class="btn shop-buy-btn">купить
-                    </button>
+                <span class="item-price">290 руб.</span>
+                <input type="button" class="btn item-buy-btn" value="купить">
             </article>
-
             <article class="shop-item-4">
                 <a href="#">
                     <img class="item-image" src="#" alt="глина для укладки волос">
-                    <p class="item-name">глина для укладки волос
-                    </p>
-                    <p class="item-fabricator">"american crew"
-                    </p>
+                    <p class="item-name">глина для укладки волос</p>
+                    <p class="item-fabricator">"american crew"</p>
                 </a>
-                <label class="shop-price">500 руб.
-                </label>
-                     <button class="btn shop-buy-btn">купить
-                     </button>
+                <span class="item-price">500 руб.</span>
+                <input type="button" class="btn item-buy-btn" value="купить">
             </article>
 
             <article class="shop-item-5">
                 <a href="#">
                     <img class="item-image" src="#" alt="гель для волос">
-                    <p class="item-name">гель для волос
-                    </p>
-                    <p class="item-fabricator">"american crew"
-                    </p>
+                    <p class="item-name">гель для волос</p>
+                    <p class="item-fabricator">"american crew"</p>
                 </a>
-                <label class="shop-price">300 руб.
-                </label>
-                    <button class="btn shop-buy-btn">купить
-                    </button>
+                <span class="item-price">300 руб.</span>
+                <input type="button" class="btn item-buy-btn" value="купить">
             </article>
 
             <article class="shop-item-6">
                 <a href="#">
                     <img class="item-image" src="#" alt="набор для бритья">
-                    <p class="item-name">набор для бритья
-                    </p>
-                    <p class="item-fabricator">"baxter of california"
-                    </p>
+                    <p class="item-name">набор для бритья</p>
+                    <p class="item-fabricator">"baxter of california"</p>
                 </a>
-                <label class="shop-price">3900 руб.
-                </label>
-                    <button class="btn shop-buy-btn">купить
-                    </button>
+                <span class="item-price">3900 руб.</span>
+                <input type="button" class="btn item-buy-btn" value="купить">
             </article>
         </section>
         <nav class="items-nav">
             <ul>
                 <li>
-                    <a class="btn items-nav-btn-1" href="#">1
-					</a>
+                    <a class="btn-items-nav" href="#">1</a>
                 </li>
-                <li><a class="btn items-nav-btn-2" href="#">2
-					</a>
+                <li><a class="btn-items-nav btn-items-nav-selected" href="#">2</a>
                 </li>
                 <li>
-                    <a class="btn items-nav-btn-3" href="#">3
-					</a>
+                    <a class="btn-items-nav" href="#">3</a>
                 </li>
                 <li>
-                    <a class="btn items-nav-btn-4" href="#">5
-					</a>
+                    <a class="btn-items-nav" href="#">4</a>
                 </li>
             </ul>
         </nav>
